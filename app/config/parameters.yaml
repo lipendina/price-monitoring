@@ -1,0 +1,14 @@
+# пароль прописан явно для удобства проверки задания,
+# в публичной базе использовались бы переменные окружения
+---
+db_user: docker
+db_host: db
+db_port: 5432
+db_name: avito
+db_password: 12345678
+http_port: 9000
+domain: http://localhost
+email_server: smtp.gmail.com
+email_name: ttexample9@gmail.com
+email_password: UpDC78m3PCJkmt6
+email_port: 587
