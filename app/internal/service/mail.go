@@ -59,7 +59,7 @@ func (e *EmailSender) sendMail(receiver string, subject string, msgBody string) 
 
 	msg := "From: " + e.config.Name + "\r\n" +
 		"To: " + receiver + "\r\n" +
-		"Subject: " + subject + "\r\n" +
+		"Subject: " + subject + "\r\n\r\n" +
 		msgBody
 
 	err := smtp.SendMail(e.sendMailConfig, auth, e.config.Name, []string{receiver}, []byte(msg))
